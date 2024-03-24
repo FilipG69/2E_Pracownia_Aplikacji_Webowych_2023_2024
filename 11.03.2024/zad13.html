@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przemieszczanie się po tablicy</title>
+</head>
+<body>
+<script>
+const tab1 = ["Marcin", "Ania", "Agnieszka"];
+
+for (let i=0; i<tab.length; i++) {
+console.log("licznik pętli: " + i); //0, 1 ...
+console.log(tab[i]); //"Marcin", "Ania" ...
+}
+const ta2b = ["Marcin", "Ania", "Agnieszka"];
+
+for (let i=0; i<tab.length; i++) {
+const el = tab[i];
+console.log(el.toUpperCase()); //"MARCIN", "ANIA" ...
+}
+
+const tab = ["Marcin", "Ania", "Agnieszka"];
+
+for (const el of tab) { //el to nazwa zmiennej wymyślona przez nas
+console.log(el); //"Marcin", "Ania" ...
+
+}
+
+for (const xxx of tab) { //xxx to nazwa zmiennej wymyślona przez nas
+console.log(xxx.toUpperCase()); //"MARCIN" ...
+}
+
+for (let lorem of tab) { //niektórzy używają tutaj let zamiast const
+console.log(lorem);
+}
+</script>
+
+</body>
+</html>

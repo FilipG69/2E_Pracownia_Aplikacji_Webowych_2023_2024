@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcja fill()</title>
+</head>
+<body>
+<script>
+const tab = new Array(20);
+console.log(tab); //[empty x 20]
+tab.fill("kot");
+console.log(tab); //["kot", "kot", "kot", ... ]
+
+const tab2 = [];
+tab2.length = 15;
+console.log(tab2); //[empty x 15]
+tab2.fill("kot", 2, 5);
+console.log(tab2); //[empty x 2, "kot", "kot", "kot", empty x 10]
+
+const tab3 = [1, 2, 3, 4, 5];
+tab3.fill("pies", 2);
+console.log(tab3); //[1, 2, "pies", "pies", "pies"]
+</script>
+
+</body>
+</html>

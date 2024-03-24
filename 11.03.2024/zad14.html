@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablice wielowymiarowe</title>
+</head>
+<body>
+<script>
+const tab1 = [
+["a1", "a2", "a3", "a4", "a5", "a6"],
+["b1", "b2", "b3", "b4", "b5", "b6"],
+["c1","c2","c3", "c4", "c5", "c6"],
+]
+
+console.log(tab[0]); //["a1", "a2", "a3", "a4", "a5", "a6"]
+console.log(tab[0].length); //6
+console.log(tab[0][1]); //"a2"
+console.log(tab[2][3]); //"c4"
+
+const tab = [
+["Marcin", 183, "red", "kot"],
+["Ania", 173, "blue", "pies"],
+["Agnieszka", 170, "yellow", "świnka"]
+]
+
+console.log(`
+    imię: ${tab[0][0]}
+    wzrost: ${tab[0][1]}
+    kolor: ${tab[0][2]}
+    zwierzak: ${tab[0][3]}
+`)
+
+const level = [
+[1, 1, 0, 0, 2, 2, 0, 0, 1, 1],
+[1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
+[1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
+[1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
+[2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
+[2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
+[1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
+[1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
+[1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
+[1, 1, 0, 0, 2, 2, 0, 0, 1, 1]
+];
+
+let str = "";
+
+for (const subTab of level) {
+//pod subTab mamy każdą kolejną podtablicę
+
+for (const el of subTab) {
+switch (el) {
+case 0 : str += "green"; break;
+case 1 : str += "brown"; break;
+case 2 : str += "black"; break;
+        }
+    }
+str += "\n";
+}
+
+console. log(str);
+
+</script>
+
+</body>
+</html>

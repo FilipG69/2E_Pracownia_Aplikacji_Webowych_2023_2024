@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łączenie tablic</title>
+</head>
+<body>
+<script>
+const tab1 = ["Ala", "Basia"];
+const tab2 = ["Piotr", "Marcin"];
+console.log(tab1 + tab2); //Ala, BasiaPiotr, Marcin
+
+const anim1 = ["Pies", "Kot"];
+const anim2 = ["słoń", "Wieloryb"];
+const anim3 = ["Chomik ninja", "Świnka morderca"];
+
+const table = anim1.concat(anim2);
+console.log(table); //wypisze ["Pies", "Kot", "słoń", "Wieloryb"]
+
+const tableBig = anim1.concat(anim2, anim3);
+console.log(tableBig); //wypisze ["Pies", "Kot", "słoń", "Wieloryb", "Chomik nil
+
+const aanim1 = ["Pies", "Kot"];
+const aanim2 = ["słoń", "Wieloryb"];
+const ttable = [ ... anim1, ... anim2];
+console.log(table)
+</script>
+
+</body>
+</html>

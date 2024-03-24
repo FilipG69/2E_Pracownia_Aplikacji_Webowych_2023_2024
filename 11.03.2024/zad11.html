@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metody push() i pop()</title>
+</head>
+<body>
+    <script>
+const tab1 = ["Marcin", "Ania", "Agnieszka"];
+tab.push("Grzegorz");
+console.log(tab) //["Marcin", "Ania", "Agnieszka", "Grzegorz"]
+tab.push("Piotr", "Karol");
+console.log(tab) //["Marcin", "Ania", "Agnieszka", "Grzegorz", "Piotr", "Karol"]
+
+const tab2 = ["Marcin", "Ania", "Agnieszka"];
+const last = tab.pop();
+
+console.log(last); //Agnieszka
+console.log(tab); //[Marcin, Ania]
+    </script>
+</body>
+</html>

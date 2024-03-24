@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcja splice()</title>
+</head>
+<body>
+<script>
+const tab1 = ["Marcin", "Ania", "Agnieszka", "Monika"];
+
+tab1.splice(2, 1); //usuwam 1 element na indeksie 2
+console.log(tab1); //["Marcin", "Ania", "Monika"]
+
+const tab2 = ["Marcin", "Ania", "Agnieszka", "Monika"];
+
+tab2.splice(1, 0, "A") //nic nie usuwam na indeksie 1 i wstawiam przed niego
+console.log(tab2); //["Marcin", "A", "Ania", "Agnieszka", "Monika"]
+
+const tab3 = ["pies", "kot", "chomik", "aligator", "świnka", "kanarek"];
+const index = tab3.indexof("aligator");
+
+if (index !== -1) {
+tab3.splice(index, 1);
+console.log(tab3); //["pies", "kot", "chomik", "świnka", "kanarek"];
+}
+</script>
+
+</body>
+</html>

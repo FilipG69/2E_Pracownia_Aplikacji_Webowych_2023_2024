@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metody indexOf(), lastIndexOf() i includes()</title>
+</head>
+<body>
+<script>
+const tab1 = ["Marcin", "Ania", "Agnieszka", "Monika"];
+
+console.log(tab.indexof("Agnieszka")); //2
+console.log(tab.indexof("Karolina")); //-1
+
+if (tab.indexof("Ania") !== -1) {
+console.log("Ania występuje w tablicy pod indexem", tab.indexof("Ania"));
+}
+
+const tab2 = ["Agnieszka", "Marcin", "Ania", "Agnieszka", "Monika"];
+console.log(tab.lastIndexof("Agnieszka")) //3;
+
+const tab = ["Marcin", "Ania", "Agnieszka", "Monika"];
+
+if (tab.includes("Ania")) {
+console.log("Ania występuje w tablicy pod indeksem", tab.indexof("Ania"))
+}
+
+if (!tab.includes("pies")) {
+console.log("Pies nie występuje w tej tablicy");
+}
+
+const ob = { name : "Jan" }
+const things = ["ala", "bala", "cala", ob, "data"];
+
+console.log(things.indexof(ob)); //3
+
+//bardziej realny przykład
+const buttons = [ ... document.queryselectorAll(".pagination-btn")];
+
+buttons.forEach(btn => {
+btn.addEventListener("click", () => {
+const index = buttons.indexOf(btn);
+showslide(index);
+
+});
+
+});
+</script>
+
+</body>
+</html>

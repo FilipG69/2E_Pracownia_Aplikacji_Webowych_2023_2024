@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie nowej tablicy</title>
+</head>
+<body>
+    <script>
+        const tab = []; //pusta tablica
+
+        const tab2 = [1, 2, 3, 4];
+
+        const tab3 = ["Marcin", "Ania", "Agnieszka"];
+
+        const a = "ALA";
+        const b = 234;
+        const c = "PIES";
+
+        const tabA = [a, b, c, "KOт"];
+
+
+        const tabB = new Array(10);
+        console.log(tab); //[blank x 10]
+
+        const tabC = new Array("Ala", "Bala", "Cala");
+        console.log(tab); //["Ala", "Bala", "Cala"]
+
+       
+        const tabD = ["Ala", "ma", "rudego", "kota"];
+
+        console.log( tab[0] ); //Ala
+        console.log( tab[1] ); //ma
+        console.log( tab[2] ); //rudego
+        console.log( tab[3] ); //kota
+        console.log( tab[tab.length-1] ); //ostatni element - kota
+    </script>
+</body>
+</html>
