@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 123, 0);
+    width: 600PX;
+    height: 300PX;
+    margin: 10px;
+    
+}
+
+.header{
+font-size: xx-large;
+text-align: center;
+
+}
+
+table{
+    background-color: blueviolet;
+    width: 250%;
+    border: 1px;
+}
+
+table, tr, th{
+    border: 1px solid black;
+
+}
+
+section{
+    text-align: left;
+    font-size: small;
+}
+
+hr{
+    color: blueviolet;
+    width: 250%;
+}
+
+footer{
+color: aliceblue;
+background-color: black;
+text-align: center;
+width: 250%;
+}
