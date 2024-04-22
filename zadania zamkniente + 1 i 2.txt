@@ -1,0 +1,15 @@
+1.B
+2.c
+3.a
+4.a
+5.d
+zad1
+onload-kiedy plik sie zaladuje 
+onsubmit- kiedy kliknienty przycisk submit
+mouseclick-funkcja np celowania w grze fps
+onmouseover- zmiana koloru krzycisku
+onmouseout- powlot koloru przycisku do pierwaotego stanu
+
+zad2
+mouseDown-nacisniencie klawisza myszy 
+mouse over- kursor najechał na element
