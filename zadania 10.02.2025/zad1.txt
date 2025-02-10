@@ -1,0 +1,18 @@
+1 zalety get 
+-zapisuje adres url w historii
+-jest to szybsza metoda ponieważ dane sa wysylane w adresie url
+-latowsc debugowania ponieasz parametry sa widoczne wpasku adresu
+ wady
+-max około 2tys znakow
+-dane sa wodpczne wiec mała poufnosc
+-można przypadkiem zedytowac dane edutujac dares url
+
+zalety i wady post
+-dane zamiesczane w body, brak ograniczen 
+-większe bespieczenstwo
+-możliwość przesylania zlozonych danych
+
+wady
+-trudniejsze debugowanie
+-wiekszrze zluzycie zasobow 
+-potencialn eproblemy z odswierzaniem strony
